@@ -3,74 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Aion GVS</title>
+    <title>Document</title>
     <style>
-        /* Enhanced CSS for graphics integration */
-        .hero-section {
+        /* Add your styles here */
+        .hero {
             position: relative;
             overflow: hidden;
         }
-        .hero-background {
+        .circle-background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            fill: currentColor;
+            opacity: 0.1;
         }
-        .framework-section { 
+        .framework-diagram {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-around;
+            margin: 20px 0;
         }
-        .evaluation-section {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+        .icon {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .icon svg {
+            fill: currentColor;
+            opacity: 0.7;
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Aion Governance Visualization System</h1>
-    </header>
-    <section class="hero-section">
-        <svg class="hero-background">
-            <!-- Add your abstract governance visualization SVG here -->
-            <rect width="100%" height="100%" fill="#e6e6e6" />
+    <div class="hero">
+        <svg class="circle-background">
+            <circle cx="50%" cy="50%" r="40%" />
+            <circle cx="50%" cy="50%" r="30%" />
+            <circle cx="50%" cy="50%" r="20%" />
         </svg>
-        <h2>Welcome to the Hero Section</h2>
-        <p>This is the hero section with background SVG.</p>
-    </section>
-    <section class="framework-section">
+        <h1>Welcome to our Project</h1>
+    </div>
+    <section class="framework">
         <h2>Framework Visualization</h2>
-        <svg>
-            <!-- Add your system comparison diagram SVG here -->
-            <circle cx="50" cy="50" r="40" fill="blue" />
-        </svg>
+        <div class="framework-diagram">
+            <div>
+                <h3>Self-Report</h3>
+                <p>Description of self-report.</p>
+            </div>
+            <div>
+                <h3>Verified Approaches</h3>
+                <p>Description of verified approaches.</p>
+            </div>
+        </div>
     </section>
-    <section class="evaluation-section">
-        <h2>Evaluation Icons</h2>
-        <svg>
-            <!-- Evaluation Icon 1 -->
-            <rect width="50" height="50" fill="red" />
-        </svg>
-        <svg>
-            <!-- Evaluation Icon 2 -->
-            <rect width="50" height="50" fill="green" />
-        </svg>
-        <svg>
-            <!-- Evaluation Icon 3 -->
-            <rect width="50" height="50" fill="yellow" />
-        </svg>
-        <svg>
-            <!-- Evaluation Icon 4 -->
-            <rect width="50" height="50" fill="purple" />
-        </svg>
+    <section class="evaluation">
+        <h2>Evaluation Items</h2>
+        <div class="icon">
+            <svg>
+                <symbol id="checkmark" viewBox="0 0 24 24">
+                    <path d="M9 19l-7-7 2-2 5 5 12-12 2 2z" />
+                </symbol>
+                <use href="#checkmark" />
+            </svg>
+            <p>Checkmark Description</p>
+        </div>
+        <div class="icon">
+            <svg>
+                <symbol id="plus" viewBox="0 0 24 24">
+                    <path d="M12 2v20M2 12h20" />
+                </symbol>
+                <use href="#plus" />
+            </svg>
+            <p>Plus Description</p>
+        </div>
+        <div class="icon">
+            <svg>
+                <symbol id="upload" viewBox="0 0 24 24">
+                    <path d="M12 3v18m6-9l-6-6-6 6" />
+                </symbol>
+                <use href="#upload" />
+            </svg>
+            <p>Upload Arrow Description</p>
+        </div>
+        <div class="icon">
+            <svg>
+                <symbol id="network" viewBox="0 0 24 24">
+                    <path d="M12 12l-5 5 5-5-5-5 5 5zm0-5l-5-5 5-5 5 5-5 5z" />
+                </symbol>
+                <use href="#network" />
+            </svg>
+            <p>Network Nodes Description</p>
+        </div>
     </section>
-    <footer>
-        <p>All original content preserved.</p>
-    </footer>
 </body>
 </html>
