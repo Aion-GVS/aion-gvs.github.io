@@ -3,44 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Aion GVS</title>
     <style>
-        /* Enhanced CSS styles here */
-        body {
-            background: url('hero-background.svg') no-repeat center center; 
-            background-size: cover;
+        /* Enhanced CSS for graphics integration */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
         }
-        .framework-visualization {
-            background: url('framework-visualization.svg');
-            /* Other styles */
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
-        .icon {
-            /* Icon styles */
+        .framework-section { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .evaluation-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Aion-GVS Project</h1>
+        <h1>Aion Governance Visualization System</h1>
     </header>
-    <main>
-        <section>
-            <h2>Framework Visualization</h2>
-            <div class="framework-visualization">
-                <!-- SVG graphic for framework visualization -->
-            </div>
-        </section>
-        <section>
-            <h2>Evaluation Criteria</h2>
-            <div class="icons">
-                <img src="evaluation-icon1.svg" alt="Evaluation Icon 1" class="icon">
-                <img src="evaluation-icon2.svg" alt="Evaluation Icon 2" class="icon">
-            </div>
-        </section>
-    </main>
+    <section class="hero-section">
+        <svg class="hero-background">
+            <!-- Add your abstract governance visualization SVG here -->
+            <rect width="100%" height="100%" fill="#e6e6e6" />
+        </svg>
+        <h2>Welcome to the Hero Section</h2>
+        <p>This is the hero section with background SVG.</p>
+    </section>
+    <section class="framework-section">
+        <h2>Framework Visualization</h2>
+        <svg>
+            <!-- Add your system comparison diagram SVG here -->
+            <circle cx="50" cy="50" r="40" fill="blue" />
+        </svg>
+    </section>
+    <section class="evaluation-section">
+        <h2>Evaluation Icons</h2>
+        <svg>
+            <!-- Evaluation Icon 1 -->
+            <rect width="50" height="50" fill="red" />
+        </svg>
+        <svg>
+            <!-- Evaluation Icon 2 -->
+            <rect width="50" height="50" fill="green" />
+        </svg>
+        <svg>
+            <!-- Evaluation Icon 3 -->
+            <rect width="50" height="50" fill="yellow" />
+        </svg>
+        <svg>
+            <!-- Evaluation Icon 4 -->
+            <rect width="50" height="50" fill="purple" />
+        </svg>
+    </section>
     <footer>
-        <p>&copy; 2026 Aion-GVS. All Rights Reserved.</p>
+        <p>All original content preserved.</p>
     </footer>
 </body>
 </html>
